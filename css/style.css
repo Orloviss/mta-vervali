@@ -98,6 +98,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  width: 100vw;
   align-items: center;
 }
 .title {
@@ -114,9 +115,7 @@ body {
   justify-content: space-evenly;
   height: 70%;
 }
-.booking_left {
-  margin-right: 100px;
-}
+
 .text {
   font-size: 18px;
   text-align: center;
@@ -135,12 +134,21 @@ body {
   position: absolute;
 }
 .square_left {
-  top: 20%;
-  left: 10%;
+  top: 25%;
+  left: 30px;
+}
+.square-image_left {
+  width: 500px;
+  margin-left: 55px;
+}
+@media (min-width: 1200px) {
+  .square-image_left {
+    margin-left: 170px;
+  }
 }
 .square_right {
-  top: 20%;
-  left: 285px;
+  top: 25%;
+  right: 30px;
 }
 .team-block {
   background-image: url(../img/team-image.jpg);
@@ -170,7 +178,7 @@ input {
   background: #e5e5e5;
   border-radius: 5px;
   border: none;
-  padding-left: 20px
+  padding-left: 20px;
 }
 .input-block {
   display: flex;
@@ -192,14 +200,17 @@ input {
   align-items: center;
 }
 button:focus {
-    border: 5px solid white;
+  border: 5px solid white;
 }
-:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
-input[type=date], input[type=time]{
-    padding-right: 20px;
-    color: gray;
-    width: 252px !important;
+input[type="date"],
+input[type="time"] {
+  padding-right: 20px;
+  color: gray;
+  width: 252px !important;
 }
