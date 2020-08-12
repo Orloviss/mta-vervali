@@ -10,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .main-page {
   background-image: url(../img/main-image.jpg);
@@ -129,8 +130,8 @@ body {
 }
 .square {
   border: 15px #fcb040 solid;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   position: absolute;
 }
 .square_left {
@@ -139,7 +140,7 @@ body {
 }
 .square_right {
   top: 20%;
-  left: 70%;
+  left: 285px;
 }
 .team-block {
   background-image: url(../img/team-image.jpg);
